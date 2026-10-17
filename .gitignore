@@ -1,0 +1,28 @@
+# R history and session state
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+*.Rproj
+
+# Package check / build artifacts
+.Rcheck/
+*.Rcheck/
+
+# knitr and R Markdown caches
+*_cache/
+/cache/
+*.utf8.md
+*.knit.md
+
+# httr OAuth cache
+.httr-oauth
+
+# Raw downloads (scripts/00_download.sh writes into data/; not redistributed)
+data/raw/
+data/*
+!data/.gitkeep

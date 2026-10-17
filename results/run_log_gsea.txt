@@ -1,0 +1,100 @@
+'select()' returned 1:many mapping between keys and columns
+using 'fgsea' for GSEA analysis, please cite Korotkevich et al (2019).
+
+preparing geneSet collections...
+GSEA analysis...
+leading edge analysis...
+done...
+Reading KEGG annotation online: "https://rest.kegg.jp/link/hsa/pathway"...
+Reading KEGG annotation online: "https://rest.kegg.jp/list/pathway/hsa"...
+using 'fgsea' for GSEA analysis, please cite Korotkevich et al (2019).
+
+preparing geneSet collections...
+GSEA analysis...
+leading edge analysis...
+done...
+$GSEA_GO_BP
+$GSEA_GO_BP$n_sig
+[1] 591
+
+$GSEA_GO_BP$n_pos
+[1] 349
+
+$GSEA_GO_BP$n_neg
+[1] 242
+
+$GSEA_GO_BP$top_pos
+                                             Description      NES     p.adjust
+GO:1903313 positive regulation of mRNA metabolic process 2.445442 1.191417e-08
+GO:0061014 positive regulation of mRNA catabolic process 2.437087 4.593455e-08
+GO:0061157                          mRNA destabilization 2.425290 2.613035e-07
+GO:0006607       NLS-bearing protein import into nucleus 2.377057 3.872291e-04
+GO:0050779                           RNA destabilization 2.367310 3.052514e-07
+GO:0033044         regulation of chromosome organization 2.356167 2.536222e-10
+GO:0006397                               mRNA processing 2.331213 2.090893e-16
+GO:0034063                       stress granule assembly 2.330277 1.762914e-04
+
+$GSEA_GO_BP$top_neg
+                                                                            Description
+GO:0006910                                                    phagocytosis, recognition
+GO:0002719       negative regulation of cytokine production involved in immune response
+GO:0002438                            acute inflammatory response to antigenic stimulus
+GO:0032720                      negative regulation of tumor necrosis factor production
+GO:0002861                    regulation of inflammatory response to antigenic stimulus
+GO:0002524                                                             hypersensitivity
+GO:1903556 negative regulation of tumor necrosis factor superfamily cytokine production
+GO:0002430                               complement receptor mediated signaling pathway
+                 NES     p.adjust
+GO:0006910 -2.360639 6.546666e-05
+GO:0002719 -2.180766 1.530806e-03
+GO:0002438 -2.150306 3.409873e-03
+GO:0032720 -2.135672 5.689063e-04
+GO:0002861 -2.106088 3.039963e-03
+GO:0002524 -2.090866 6.012718e-03
+GO:1903556 -2.087483 6.516640e-04
+GO:0002430 -2.064092 9.947831e-03
+
+
+$GSEA_KEGG
+$GSEA_KEGG$n_sig
+[1] 65
+
+$GSEA_KEGG$n_pos
+[1] 27
+
+$GSEA_KEGG$n_neg
+[1] 38
+
+$GSEA_KEGG$top_pos
+                                         Description      NES     p.adjust
+hsa03013                 Nucleocytoplasmic transport 2.327481 4.949183e-07
+hsa04141 Protein processing in endoplasmic reticulum 2.299750 1.149230e-08
+hsa04110                                  Cell cycle 2.211388 3.711813e-07
+hsa03015                   mRNA surveillance pathway 2.107717 8.895324e-05
+hsa03018                             RNA degradation 2.101414 2.803053e-04
+hsa03040                                 Spliceosome 2.087841 4.795671e-06
+hsa04120              Ubiquitin mediated proteolysis 1.955823 8.994733e-05
+hsa04114                              Oocyte meiosis 1.919879 3.757170e-04
+
+$GSEA_KEGG$top_neg
+                                                           Description
+hsa05150                               Staphylococcus aureus infection
+hsa04080                       Neuroactive ligand-receptor interaction
+hsa05310                                                        Asthma
+hsa04061 Viral protein interaction with cytokine and cytokine receptor
+hsa05320                                    Autoimmune thyroid disease
+hsa05144                                                       Malaria
+hsa05323                                          Rheumatoid arthritis
+hsa04640                                    Hematopoietic cell lineage
+               NES     p.adjust
+hsa05150 -2.535246 4.949183e-07
+hsa04080 -2.385367 1.116492e-11
+hsa05310 -2.190149 2.830435e-03
+hsa04061 -2.175656 1.290637e-05
+hsa05320 -2.164821 5.049790e-04
+hsa05144 -2.150040 7.122835e-04
+hsa05323 -2.141807 2.567836e-05
+hsa04640 -2.101749 5.102805e-05
+
+
+DONE

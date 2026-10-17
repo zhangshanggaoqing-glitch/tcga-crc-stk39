@@ -1,0 +1,35 @@
+Call:
+coxph(formula = Surv(OS.time, OS) ~ STK39_z + age + gender + 
+    stage_grp + project, data = sv)
+
+  n= 571, number of events= 113 
+   (20 observations deleted due to missingness)
+
+                     coef exp(coef)  se(coef)      z Pr(>|z|)    
+STK39_z         -0.124855  0.882625  0.091771 -1.361    0.174    
+age              0.040121  1.040937  0.008804  4.557 5.19e-06 ***
+gendermale      -0.020464  0.979744  0.191435 -0.107    0.915    
+stage_grpIII-IV  1.295387  3.652408  0.205693  6.298 3.02e-10 ***
+projectREAD     -0.297857  0.742408  0.238772 -1.247    0.212    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+                exp(coef) exp(-coef) lower .95 upper .95
+STK39_z            0.8826     1.1330    0.7373     1.057
+age                1.0409     0.9607    1.0231     1.059
+gendermale         0.9797     1.0207    0.6732     1.426
+stage_grpIII-IV    3.6524     0.2738    2.4406     5.466
+projectREAD        0.7424     1.3470    0.4649     1.185
+
+Concordance= 0.71  (se = 0.026 )
+Likelihood ratio test= 59.18  on 5 df,   p=2e-11
+Wald test            = 55.51  on 5 df,   p=1e-10
+Score (logrank) test = 58.97  on 5 df,   p=2e-11
+
+          chisq df    p
+STK39_z   0.439  1 0.51
+age       0.268  1 0.60
+gender    0.970  1 0.32
+stage_grp 1.625  1 0.20
+project   1.005  1 0.32
+GLOBAL    4.884  5 0.43
